@@ -19,7 +19,7 @@ public class Solution32 {
         queue.offer(root);
         while (!queue.isEmpty()){
             int size = queue.size();
-            for(int i = 0;i < queue.size();i++){
+            for(int i = 0;i < size;i++){
                 TreeNode node = queue.poll();
                 list.add(node.val);
                 if (node.left != null)
