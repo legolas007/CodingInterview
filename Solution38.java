@@ -4,8 +4,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /**
- * 字符串全排列 1、所有可能出现在第一个位置的字符，把第一个字符和后面所有的字符交换 2、固定第一个字符，求后面所有字符的排列，
- * 把后面所有字符再分成两部分： 后面字符的第一个字符，以及之后的所有字符，重复步骤1
+ * 字符串全排列
+ * 1、所有可能出现在第一个位置的字符，把第一个字符和后面所有的字符交换
+ * 2、固定第一个字符，求后面所有字符的排列，
+ * 把后面所有字符再分成两部分：
+ * 后面字符的第一个字符，以及之后的所有字符，重复步骤1
  * 
  * @author usher
  *
@@ -21,7 +24,7 @@ public class Solution38 {
 	}
 
 	private static void PermutationHelper(char[] charArray, int i, ArrayList<String> reStrings) {
-		// TODO Auto-generated method stub
+
 		// i号位置作为交换点，向后交换
 		// 递归出口：只剩一个字符，即无法交换
 		if (charArray.length - 1 == i) {
