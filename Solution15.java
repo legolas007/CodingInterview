@@ -8,6 +8,12 @@ package com.usher.algorithm.offer;
  */
 public class Solution15 {
     public int NumberBitCount(int n){
-        return Integer.bitCount(n);
+        int count = 0;
+        while (n!=0){
+            ++count;
+            n = (n-1) & n;
+        }
+        return count;
+        //return Integer.bitCount(n);
     }
 }
