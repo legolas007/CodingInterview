@@ -18,9 +18,11 @@ public class Solution55 {
     public int TreeDepth(TreeNode root){
         if (root == null)
             return 0;
+
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         int max_depth = 0;
+
         while (!queue.isEmpty()){
             int size = queue.size();
             for (int i = 0;i < queue.size();i++){
@@ -34,6 +36,7 @@ public class Solution55 {
             }
             ++max_depth;
         }
+
         return max_depth;
         //return Math.max(TreeDepth(root.left),TreeDepth(root.right))+1;//递归
     }
