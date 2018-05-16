@@ -6,7 +6,9 @@ package com.usher.algorithm.offer;
  * @Author: Usher
  * @Description:
  * 二叉搜索树的第 K 个结点，中序遍历一颗二叉搜索树，递增排序
+ * 左 < 根 < 右，递增
  */
+
 public class Solution54 {
     private TreeNode ret;
     private int cnt = 0;
